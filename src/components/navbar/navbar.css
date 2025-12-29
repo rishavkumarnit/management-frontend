@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 20vw;
+  background-color: #d9d9d9;
+}
+
+.title {
+  margin: 35px 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.crm {
+  color: #0003d0;
+}
+.hr {
+  width: 20vw;
+  background-color: #aeaeae;
+  height: 1.7px;
+  opacity: 0.3;
+}
+
+.navlist {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 20px;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navitem {
+  cursor: pointer;
+  padding-left: 7px;
+}
+
+.selected-nav {
+  background-color: rgb(167 167 167);
+  width: 90%;
+  height: 30px;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}

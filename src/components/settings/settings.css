@@ -1,0 +1,80 @@
+.settings-body {
+  margin-left: 40px;
+  padding-top: 20px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-table {
+  border: 1.5px solid #b1b1b1;
+  height: 73vh;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.edit-text {
+  margin-left: 22px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #747474;
+}
+
+.edit-hr {
+  width: 73vw;
+  background-color: #aeaeae;
+  height: 1.7px;
+  opacity: 0.3;
+  margin-left: 7px;
+}
+.edit-underline {
+  width: 7vw;
+  background-color: #747474;
+  height: 1.7px;
+  opacity: 0.3;
+  margin-left: 7px;
+}
+
+.profile-table {
+  margin-left: 20px;
+  display: flex;
+  gap: 17px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.save-btn {
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: #d9d9d9;
+  height: 33px;
+  width: 140px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #636060;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.profile-input {
+  border-radius: 5px;
+  border: 1.5px solid #3e3e3e;
+  width: 28vw;
+  height: 25px;
+  border-width: 0.94px;
+  margin-top: 1px;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: 13px;
+  color: #636060;
+}
+
+.profile-input:focus {
+  outline: none;
+}
