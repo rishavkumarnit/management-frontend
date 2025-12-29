@@ -13,8 +13,7 @@ const Navbar = () => {
   const handleSelectItem = (value) => {
     setSelected(value);
     localStorage.setItem("selected", value);
-    console.log("yesbro");
-    console.log(value);
+
   };
   useEffect(() => {
     const saved = localStorage.getItem("selected");

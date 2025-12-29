@@ -86,7 +86,7 @@ const Employees = () => {
       return;
     }
     const record = employees.filter((item) => item._id === value);
-    console.log(record);
+
     setEmployee({
       firstname: record[0].firstname,
       lastname: record[0].lastname,
@@ -98,7 +98,7 @@ const Employees = () => {
   };
 
   const handleSaveEdited = async () => {
-    console.log(employee);
+
     await axios.put("https://finalprojectbackend-u5cq.onrender.com/api/employees/", {
       initials: employee.initials,
       firstname: employee.firstname,
@@ -121,7 +121,7 @@ const Employees = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEmployee({ ...employee, [name]: value });
-    console.log(employee);
+ 
   };
 
   const getInitials = (word) => {
@@ -145,7 +145,7 @@ const Employees = () => {
   };
 
   const handleSaveEmployee = async () => {
-    console.log("initials");
+ 
     if (!employee.firstname) {
       alert("firstname cannot be empty");
       return;
@@ -172,7 +172,7 @@ const Employees = () => {
     }
 
     let initials = getInitials(employee.firstname + " " + employee.lastname);
-    console.log(initials);
+
     try {
       await axios.post("https://finalprojectbackend-u5cq.onrender.com/api/employees/", {
         initials: initials.toUpperCase(),

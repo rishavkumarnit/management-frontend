@@ -41,7 +41,7 @@ const Settings = () => {
       email: profile.email,
       password: profile.password,
     });
-    console.log(profile);
+
   };
 
   const getProfile = async () => {
@@ -53,7 +53,7 @@ const Settings = () => {
       password: response.data[0].password ?? "",
       confirmpassword: response.data[0].password ?? "",
     });
-    console.log(response.data);
+
   };
 
   useEffect(() => {

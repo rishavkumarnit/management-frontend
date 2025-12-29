@@ -29,7 +29,7 @@ const Leads = () => {
   });
 
   const getLeads = async (page = 1, search = "") => {
-    console.log("hello");
+
 
     const res = await axios.get("https://finalprojectbackend-u5cq.onrender.com/api/leads", {
       params: {
@@ -79,7 +79,7 @@ const Leads = () => {
       alert("Please enter a valid email address" + lead.email);
       return;
     }
-    console.log(lead);
+ 
     try {
       await axios.post("https://finalprojectbackend-u5cq.onrender.com/api/leads", lead);
       setLead({
@@ -132,7 +132,7 @@ const Leads = () => {
   const [uploading, setUploading] = useState(false);
   const [progress, setProgress] = useState(0);
   const handleFile = (file) => {
-    console.log(file);
+ 
     try {
       if (!file) return;
       const reader = new FileReader();
@@ -207,7 +207,7 @@ const Leads = () => {
         alert("CSV upload completed");
       }, 400);
     } catch (err) {
-      console.error(err);
+
       setUploading(false);
       alert("Upload failed.");
     }

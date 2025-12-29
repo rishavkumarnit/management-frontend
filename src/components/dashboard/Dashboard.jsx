@@ -25,7 +25,6 @@ const Dashboard = () => {
       },
     });
     setEmployees(res.data);
-    console.log(res.data);
   };
   const [leads, setLeads] = useState([]);
 
@@ -43,6 +42,7 @@ const Dashboard = () => {
 
   const unassignedLeads = leads.filter((l) => !l.assignedto).length;
   const assignedThisWeek = leads.filter((l) => {
+    if (!l.assignedto) return false; 
     const assignedDate = new Date(l.assignedat);
     const now = new Date();
     const weekAgo = new Date();
@@ -149,7 +149,7 @@ const Dashboard = () => {
   const getActivities = async () => {
     const res = await axios.get(`https://finalprojectbackend-u5cq.onrender.com/api/admin-activity/`);
     setActivities(res.data);
-    console.log(res.data);
+
   };
 
   useEffect(() => {
